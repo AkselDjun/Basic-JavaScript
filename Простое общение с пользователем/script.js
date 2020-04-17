@@ -1,4 +1,4 @@
-"_use strict";
+"use strict";
 
 //alert("Hello world!");
 
