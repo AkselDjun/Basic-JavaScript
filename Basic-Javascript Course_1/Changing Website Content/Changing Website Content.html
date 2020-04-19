@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="text">Hello Rob!</p>
+
+    <button id="myButton">Change text</button>
+
+    <p id="secondParagraph">Javascript is ......</p>
+
+    <button id="second">Change Js</button>
+
+    <p id="unit"></p>
+
+    <button id="button">Button</button>
+
+    <script type="text/javascript">
+        document.getElementById('myButton').onclick = function () {
+            document.getElementById('text').innerHTML = "Hello Alexei!";
+
+        };
+
+        document.getElementById('second').onclick = function () {
+            document.getElementById('secondParagraph').innerHTML = "I think " + document.getElementById('secondParagraph').innerHTML + "awesome:";
+
+        };
+
+        document.getElementById('button').onclick = function () {
+            document.getElementById('unit').innerHTML = "<h1>Hi there:</h1>";
+        };
+    </script>
+</body>
+
+</html>

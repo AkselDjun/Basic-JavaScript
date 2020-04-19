@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>How many fingers am I holding up?</p>
+    <p><input type="text" id="Fingers"></p>
+    <p><button id="but">Enter</button></p>
+
+    <script type="text/javascript">
+        document.getElementById("but").onclick = function () {
+            var Fing = document.getElementById("Fingers").value;
+            var Rand = Math.random();
+            Rand = Rand * 6;
+            Rand = Math.floor(Rand);
+
+            if (Fing == Rand) {
+                alert("True");
+            } else {
+                alert("False. It's number: " + Rand);
+            };
+        };
+    </script>
+</body>
+
+</html>

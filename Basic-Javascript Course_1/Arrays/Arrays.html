@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        var myArray = new Array();
+        myArray[0] = "Pizza";
+        myArray[1] = "Chocolate";
+        console.log(myArray);//вывод информации о массиве в лог
+
+
+        var tweets = ["Lorem5", "I love code"];
+        tweets.push("Back to work"); // добавление нового элемента в массив
+        tweets.splice(1, 1);//удаление элементов из массива (первый параметр это еденица, второй количество)
+        tweets.splice(1, 1, "Hello world!");//добавление элемента в массив на определенную позицию (первый параметр это еденица, второй количествоб. третий это данные)
+        console.log(tweets);
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

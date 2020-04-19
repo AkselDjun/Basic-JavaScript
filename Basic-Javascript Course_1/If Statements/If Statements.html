@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>What is the magic word?</p>
+
+    <p><input type="text" id="magicWord"></p>
+
+    <p><button id="but">Enter</button></p>
+
+    <script type="text/javascript">
+        document.getElementById("but").onclick = function () {
+            var magicW = document.getElementById("magicWord").value;
+
+            var magicS = "code";
+
+            if (magicW == magicS) {
+                alert("True");
+            } else {
+                alert("Mistake!");
+            };
+        };
+
+    </script>
+</body>
+
+</html>
