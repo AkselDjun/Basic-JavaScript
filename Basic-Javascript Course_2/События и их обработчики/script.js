@@ -22,7 +22,7 @@ let link = document.querySelector("a");
 // });
 
 link.addEventListener("click", function (event) {
-    event.preventDefault();
+    event.preventDefault();// отмена действий по умолчанию
     console.log("Произошло событие: " + event.type + " на элементе " + event.target);
 });
 
@@ -35,3 +35,4 @@ btn.forEach(function (item) {
 // btn[0].addEventListener("mouseenter", function () {
 //     alert("You focus in first button");
 // });
+

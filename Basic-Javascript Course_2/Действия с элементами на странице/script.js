@@ -20,13 +20,13 @@ circle[2].style.backgroundColor = "green";
 //     item.style.backgroundColor = "blue";
 // });
 
-let div = document.createElement("div"),
-    text = document.createTextNode("Тут был я");
+let div = document.createElement("div"), //создание тега
+    text = document.createTextNode("Тут был я"); // создание текстового поля с текстом 
 
 
-div.classList.add("black");
+div.classList.add("black");//добавление класса к тегу 
 
-// document.body.appendChild(div);
+// document.body.appendChild(div);//вставка в конец document body
 // wrapper.appendChild(div);
 
 
@@ -34,10 +34,10 @@ div.classList.add("black");
 div.textContent = "Hello world!";
 
 
-document.body.insertBefore(div, circle[0]);
-document.body.removeChild(circle[1]);
+document.body.insertBefore(div, circle[0]);//вставка перед указанным элементом 
+document.body.removeChild(circle[1]);//удаление элемента из DOM
 wrapper.removeChild(heart[1]);
 
-document.body.replaceChild(btn[1], circle[1])
+document.body.replaceChild(btn[1], circle[1])//замена дочернего элемента на выбранный
 
 console.log(div);

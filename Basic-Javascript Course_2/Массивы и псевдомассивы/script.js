@@ -60,3 +60,4 @@ function compareNum(a, b) {
 }
 
 console.log(arr)
+
