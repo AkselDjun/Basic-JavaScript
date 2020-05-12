@@ -7,6 +7,8 @@ var boolean = true;
 null;
 undefined;
 var obj = {};
+bigInt;
+
 
 console.log(4 / 0);
 

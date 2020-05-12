@@ -4,8 +4,8 @@ let option = {
     name: "Test"
 };
 
-//console.log(option.name);
 
+//console.log(option.name);
 console.log(option["name"]);
 option.bool = false;
 option.colors = {
@@ -13,12 +13,12 @@ option.colors = {
     bg: "red"
 };
 
-delete option.name;
+delete option.name;//удаление ключа со значением из объекта option 
 
 console.log(option);
 
 for (let key in option) {
-    console.log("Свойство " + key + " имеет значение " + option[key]);
+    console.log("Свойство " + key + " имеет значение " + option[key]);//перебор по ключу и свойству в объекте option
 }
 
 console.log(Object.keys(option).length);
@@ -38,7 +38,7 @@ console.log(Object.keys(option).length);
 // let mass = [1, 3, 4, 6, 7];
 
 // for (let key of mass) {
-//     console.log(key);
+//     console.log(key);//вывод всех значений массива 
 // }
 
 // let ans = prompt("", ""),
