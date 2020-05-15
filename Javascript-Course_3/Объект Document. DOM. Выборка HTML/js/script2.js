@@ -3,7 +3,7 @@ window.onload = function() {
 	var elId = document.getElementById("stuck_container");
 
 
-	function getElements () {
+	function getElements() {
 		var elem = {};
 		
 		//arguments
