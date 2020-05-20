@@ -1,9 +1,9 @@
 let array = ['WFM', 30];
 
-//let name = array[0];
-//let age = array[1];
-//let color = array[2];
+let name = array[0];
+let age = array[1];
+// let color = array[2];
 
-let [, , color='red'] = array;
+let [, , color = 'red'] = array;
 
-console.log(color);
+console.log(name, age, color);

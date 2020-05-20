@@ -12,6 +12,6 @@
 
 let str = 'Hello!';
 
-console.log('Repeat: ', str.repeat(3));
-console.log('StartsWith: ', str.startsWith('el', 1));
-console.log('Includes: ', str.includes('llo', 2));
+console.log('Repeat: ', str.repeat(3));// конструирует и возвращает новую строку, содержащую указанное количество соединённых вместе копий строки, на которой он был вызван.
+console.log('StartsWith: ', str.startsWith('el', 1));//определяет, начинается ли строка с символов другой строки, возвращая, соответсвенно, true или false.
+console.log('Includes: ', str.includes('llo', 2));//проверяет, содержит ли строка заданную подстроку, и возвращает, соответственно true или false

@@ -2,14 +2,14 @@
 
 import $ from 'jquery';
 
-let promise = new Promise((resolve, reject) => {
+let promise = new Promise((resolve, reject) => {//promise - обещание
     $.ajax({
         url: 'http://d1ate.jsontest.com/',
         dataType: 'json',
-        success: function(response) {
+        success: function (response) {
             resolve(response);
         },
-        error: function(error) {
+        error: function (error) {
             reject(error);
         }
     });

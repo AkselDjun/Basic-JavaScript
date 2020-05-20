@@ -1,3 +1,3 @@
-import Car from './extra';
+import Car from './extra.js';
 
 var car = new Car();

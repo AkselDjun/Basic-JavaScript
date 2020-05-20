@@ -1,3 +1,5 @@
+"use strict";
+
 const createPerson = (name, surname, fieldName, fieldPostfix) => {
     const fullname = name + ' ' + surname;
     return {

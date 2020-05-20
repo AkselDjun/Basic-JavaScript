@@ -9,7 +9,7 @@ class Car {
     }
 }
 
-class BMW extends Car {
+class BMW extends Car {//в данном примере обявляется, что BMW это дочерний элемент класса Car
     constructor(name) {
         super(name);
 
@@ -21,5 +21,5 @@ class BMW extends Car {
     }
 }
 
-let bmw = new BMW('x6');
+let bmw = new BMW('x6');// добавление к классу BMW 
 bmw.logName();
