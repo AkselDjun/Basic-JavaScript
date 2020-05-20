@@ -1,68 +1,84 @@
 
-window.onload = function() {
-	
-	// p div h1
-	// #id .class
-	
-	 
-	// input[name='email']
-	
-	// .class[name='email']
-	
-	//#id .class
-	//#id, .class
-	
-	
-	//console.log(document.querySelectorAll('p'));
-	//console.log(document/*.querySelector('p')*/.querySelector('span'));//Element
-	
-	// :first-line
-	// :first-leter
-	
-	//:link
-	//:visited
-	
-	
-	
-	
+window.onload = function () {
+
 	document.querySelector('h2').onclick = function () {
-		
-		var myLi = document.querySelector('.current');
-		
-		//console.log(myLi.parentNode);
-		//console.log(myLi.childNodes);
-		//myLi.parentNode.firstChild.style.border = '2px solid red';
-		//myLi.parentNode.lastChild.style.border = '2px solid red';
-		
-		///myLi.nextSibling.previousSibling.style.border = '2px solid red';
-		
-		//console.log(myLi.nextSibling.nextSibling.firstChild.firstChild.nodeValue = 'hello');
-		
-		//console.log(myLi.nextSibling.nextSibling.firstChild.nodeName);
-		
-		console.log(myLi.parentNode.children);
-		//myLi.parentNode.firstElementChild.style.border = '2px solid red';
-		//myLi.parentNode.lastElementChild.style.border = '2px solid red';
-		
-		//myLi.nextElementSibling.style.border = '2px solid red';
-		//myLi.previousElementSibling.style.border = '2px solid red';
-		
-		//console.log(myLi.parentNode.children.length);
-		console.log(myLi.id = 'hello');
-		
-		//console.log(document.forms[0].action = 'http://yandex.ru');
-		//console.log(document.links[0].href = 'http://yandex.ru');// htmlFor
-		console.log(document.querySelector('label.name').style.borderTop="5px solid yellow");// htmlFor   onclick=""
-		
-		document.images[0].setAttribute('for','100');
-		console.log(document.images[0].getAttribute('for'));
-		
-		if(document.images[0].hasAttribute('for')) {
-			document.images[0].removeAttribute('for');
-		}
-		
-		
-		
+
+		var li = document.querySelector('.current');
+
+		// console.log(li.innerHTML);
+		// li.innerHTML = "Hello world!";
+
+		// console.log(li.outerHTML);// получает сериализованный HTML-фрагмент, описывающий элемент, включая его потомков.
+		// li.outerHTML = "<h2>" + li.outerHTML + "</h2>";
+
+		// li.insertAdjacentHTML("beforebegin"/*перед открытием li*/, "<strong>Some text</strong>");// добавление текста совместо с разметкой на определенную позицию
+		// li.insertAdjacentHTML("afterbegin"/*после открытия li*/, "<strong>Some text</strong>");
+		// li.insertAdjacentHTML("beforeend"/*перед закрытием li*/, "<strong>Some text</strong>");
+		// li.insertAdjacentHTML("afterend"/*после закрытием li*/, "<strong>Some text</strong>");
+
+
+		li = document.querySelector('.current').firstChild;//тег "a"
+
+		// console.log(li.textContent);//возвращает текстовое значение элемента
+		// li.textContent = "Some text";//свойства одинаковые
+		// li.innerText = "Some text";//свойства одинаковые
+
+
+
+		// function textContent(el, value) {
+		// 	var content = el.textContent;
+
+		// 	if (value === undefined) {
+
+		// 		if (content !== undefined) {
+		// 			return content;
+		// 		} else {
+		// 			return el.innerText;
+		// 		}
+
+		// 	} else {
+
+		// 		if (content !== undefined) {
+		// 			el.textContent = value;
+		// 		} else {
+		// 			el.innerText = value;
+		// 		}
+
+		// 	};
+
+		// };
+
+		// textContent(li, "hello");
+
+
+
+		var div = document.querySelector("#content");
+		// console.log(div.textContent);//получение текстового контента блока content
+		// console.log(div.innerText);
+
+		// function textContent(el) {
+		// 	var child, type, s = "";
+
+		// 	for (child = el.firstChild; child != null; child = child.nextSibling) {
+		// 		type = child.nodeType;//получение типа элемента 
+
+		// 		if (type == 3) {
+		// 			s += child.nodeValue;
+		// 		} else if (type === 1) {
+		// 			s += textContent(child);
+		// 		}
+
+		// 	}
+
+		// 	return s;
+		// };
+		// console.log(textContent(div));
+
+
+
+
+
+
 	};
 }
 

@@ -1,10 +1,10 @@
 
 
-window.onload = function(e) {		
+window.onload = function (e) {
 	var button = document.getElementById("myButton");
 	//button.addEventListener('click',handler,false);
 	//button.attachEvent("onclick",handler);
-	
+
 	/*button.onclick = function (e) {
 		
 		e = e || window.event;
@@ -16,55 +16,54 @@ window.onload = function(e) {
 		
 		return false;
 	}*/
-	
-	document.forms.myForm.elements.exampleInputEmail.onkeypress = function(e) {
-		if(e.charCode == 100) {
+
+	document.forms.myForm.elements.exampleInputEmail.onkeypress = function (e) {
+		if (e.charCode == 100) {
 			return false;
 		}
 		else {
 			return true;
 		}
 	}
-	
+
 	/*window.onbeforeunload = function () {
-		var message = "Gello world";
+		var message = "Hello world";
 		
 		return message;
 	}*/
-	
+
 	var hello = 'World';
-	
-	function handler (e) {
-		
+
+	function handler(e) {
+
 		e = e || window.event;
-		
+
 		//console.log(e.type);
 		console.log(hello);
-		
-		if(e.preventDefault) {
-			e.preventDefault();
+
+		if (e.preventDefault) {
+			e.preventDefault();// отмена стандартного поведения 
 			console.log(e.defaultPrevented);
 		}
-		else if(e.returnValue) e.returnValue = false;
-		else return false; 
+		else if (e.returnValue) e.returnValue = false;
+		else return false;
 	}
-	
-	function addEvent(target,type,hendler) {
-		if(target.addEventListener) {
-			target.addEventListener(type,hendler,false)
+
+	function addEvent(target, type, hendler) {//добавление события
+		if (target.addEventListener) {
+			target.addEventListener(type, hendler, false)
 		}
 		else {
-			target.attachEvent("on" + type,function (e) {
-				return hendler.call(target,e);
+			target.attachEvent("on" + type, function (e) {//альтернатива addEventListener только для IE
+				return hendler.call(target, e);
 			});
 		}
 	}
-	
-	addEvent(button,'click',handler);
-	
+
+	addEvent(button, 'click', handler);
+
 }
 
 
-	
 
-	
+

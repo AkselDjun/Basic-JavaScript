@@ -1,36 +1,36 @@
 
-window.onload = function(e) {
-	
-	
-	function addEvent(target,type,hendler) {
-		if(target.addEventListener) {
-			target.addEventListener(type,hendler,false)
+window.onload = function (e) {
+
+
+	function addEvent(target, type, hendler) {
+		if (target.addEventListener) {
+			target.addEventListener(type, hendler, false)
 		}
 		else {
-			target.attachEvent("on" + type,function (e) {
-				return hendler.call(target,e);
+			target.attachEvent("on" + type, function (e) {
+				return hendler.call(target, e);
 			});
 		}
 	}
-	
+
 	var button = document.getElementById('myButton');
-	addEvent(button,'click',handler);
-	
+	addEvent(button, 'click', handler);
+
 	var chars = new Array();
-	
-	function handler (e) {
+
+	function handler(e) {
 		e = e || window.event;
 		var target = e.target || e.srcElement;
 
 		//console.log(e);
-		
-		//console.log(String.fromCharCode(e.charCode));
-		
+
+		//console.log(String.fromCharCode(e.charCode));// возвращает строку, созданную из указанной последовательности значений единиц кода UTF-16.
+
 		//chars.push(String.fromCharCode(e.charCode));
 		//console.log(chars);
-		
+
 		/*var code = e.charCode || e.keyCode;
-		if(code < 32 || e.ctrlKey || e.altKey) {
+		if(code < 32 || e.ctrlKey || e.altKey) {//ctrl или alt клавиши
 			return;
 		}
 		
@@ -46,10 +46,10 @@ window.onload = function(e) {
 		
 		//e.preventDefault();
 		return true;*/
-		
-		
+
+
 		/////change/////
-		
+
 		/*var id = e.target.getAttribute('value');
 		if(id) {
 			var div = document.querySelector('.extraFields');
@@ -69,7 +69,7 @@ window.onload = function(e) {
 		}*/
 		return false
 	}
-	
+
 
 	//var input = document.getElementById("exampleInputEmail");
 	/*var inputs = document.getElementsByTagName('input');
@@ -81,17 +81,16 @@ window.onload = function(e) {
 		}
 	}*/
 	//addEvent(input,'keypress',handler);
-	
-	
-	
-	
+
+
+
+
 
 }
 
-		
 
 
 
-	
 
-	
+
+
