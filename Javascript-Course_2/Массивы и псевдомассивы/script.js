@@ -52,12 +52,12 @@ console.log(Object.keys(option).length);
 
 // console.log(arr);
 
-let arr = [1, 15, 4],
+let arr = [1, 15, 4, 12, 32],
     i = arr.sort(compareNum);
 
 function compareNum(a, b) {
     return a - b;
 }
 
-console.log(arr)
+console.log(arr);
 
