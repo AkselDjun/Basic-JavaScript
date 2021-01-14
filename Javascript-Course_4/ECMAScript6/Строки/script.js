@@ -13,7 +13,7 @@ const strToLog = `
     Hello 
     world
         I am
-            New tab
+            New t
 `;
 
 console.log(strToLog);
